@@ -23,11 +23,24 @@ public class Main {
         colaboradores.add(new Colaborador("Alberto", new Date(), cargos.get(0)));
         colaboradores.add(new Colaborador("Eduardo", new Date(), cargos.get(1)));
         colaboradores.add(new Colaborador("Gerson", new Date(), cargos.get(2)));
-        
-        for ( Colaborador c: colaboradores){
+
+//         Ex 5 - Listar colaboradores ativos (que não possuem data desligamento)
+
+     /*   for ( Colaborador c: colaboradores){
             if (c.getDtDesligamento() == null){
                 System.out.println(c);
             }
-        }
+        }*/
+
+//        Ex 6 - Listar colaboradores por Cargo
+                for (Cargo cargo : cargos ) {
+                    System.out.println("Lista de colaboradores por cargo: " + cargo.getDescricao());
+                    /*for (Colaborador colaborador : colaboradores) {
+                        if (colaborador.getCargo() == cargo){
+                            System.out.println(colaborador);
+                        }
+                    }*/
+                }
+
     }
 }
