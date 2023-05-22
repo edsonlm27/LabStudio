@@ -9,11 +9,11 @@ public class Colaborador {
     private Cargo cargo;
     private double salario;
 
-    public Colaborador(String nome, Date date, Cargo cargo) {
+    public Colaborador(String nome, Date dtAdmissao, Cargo cargo) {
         this.nome = nome;
         this.dtAdmissao = dtAdmissao;
-        this.cargo = this.cargo;
-        this.salario = salario;
+        this.cargo = cargo;
+        this.salario = cargo.getSalarioBase();
     }
 
     public String getNome() {

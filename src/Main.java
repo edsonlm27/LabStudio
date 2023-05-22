@@ -23,6 +23,11 @@ public class Main {
         colaboradores.add(new Colaborador("Alberto", new Date(), cargos.get(0)));
         colaboradores.add(new Colaborador("Eduardo", new Date(), cargos.get(1)));
         colaboradores.add(new Colaborador("Gerson", new Date(), cargos.get(2)));
-
+        
+        for ( Colaborador c: colaboradores){
+            if (c.getDtDesligamento() == null){
+                System.out.println(c);
+            }
+        }
     }
 }
